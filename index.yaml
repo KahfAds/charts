@@ -1,0 +1,36 @@
+apiVersion: v1
+entries:
+  traefik-forward-auth:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 4.5.2
+    apiVersion: v2
+    appVersion: 2.2.0
+    created: "2022-08-02T14:41:59.261616115Z"
+    dependencies:
+      - name: common
+        repository: https://library-charts.k8s-at-home.com
+        version: 4.5.2
+    description: A minimal forward authentication service that provides OAuth/SSO
+      login and authentication for the traefik reverse proxy/load balancer
+    digest: b880689f6a819698ac1c8292a3a14588942a61a4e52528834ae6d23ba7c4215b
+    home: https://github.com/kahfads/charts/tree/main/charts/stable/traefik-forward-auth
+    keywords:
+      - traefik
+      - traefik-forward-auth
+      - oauth
+      - oauth2
+      - oidc
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+      - email: nick@cajun.pro
+        name: DirtyCajunRice
+    name: traefik-forward-auth
+    sources:
+      - https://github.com/thomseddon/traefik-forward-auth
+      - https://hub.docker.com/r/thomseddon/traefik-forward-auth
+    urls:
+      - https://github.com/kahfads/charts/releases/download/traefik-forward-auth-2.2.2/traefik-forward-auth-2.2.2.tgz
+    version: 2.2.2
+generated: "2022-08-19T23:24:28.714949325Z"
